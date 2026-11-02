@@ -1,24 +1,65 @@
-# Point2Change
+<p align="center">
+  <img src="docs/assets/logo.png" width="120" alt="Point2Change icon: a point prompt revealing a change region on paired map tiles">
+</p>
 
-**Turn point prompts into change masks for bi-temporal remote sensing imagery with SAM 2, reducing manual annotation effort.**
+<h1 align="center">Point2Change</h1>
 
-Point2Change is a local Python desktop application for labeling changes between
-two registered RGB images. Click a changed object in either image to generate
-candidate masks with SAM 2. The application ranks candidates using a change
-response map and combines them into a change mask that you can refine manually.
+<p align="center">
+  <strong>From point prompts to change masks.</strong><br>
+  SAM 2-assisted annotation for bi-temporal remote sensing imagery.<br>
+  Fewer manual outlines. More time for review.
+</p>
 
-## Features
+<p align="center">
+  <a href="#quick-start">Get started</a> ·
+  <a href="#annotation-workflow">Workflow</a> ·
+  <a href="#examples">Examples</a>
+</p>
 
-- Positive point prompts generate change-mask candidates; negative points correct unwanted regions.
-- Synchronized T1/T2 views support paired-image inspection.
-- Brush, polygon, and eraser tools refine masks, with undo/redo and threshold adjustment.
-- Dataset browsing pairs images by relative filename and supports nested folders.
-- Automatic saving preserves prompts, soft masks, manual edits, and review status.
-- Explicit review states distinguish drafts, reviewed samples, confirmed no-change samples, and samples needing review.
-- Export binary and soft masks for downstream use.
+## About
 
-Predictions are annotation suggestions and should be reviewed. This project
-does not claim a measured reduction in annotation time or a benchmark accuracy.
+Point2Change is a local desktop tool that turns clicks into change-mask
+suggestions for registered image pairs. It combines SAM 2 proposals with a
+change response map so you can focus on reviewing and refining annotations.
+
+- **Prompt with points.** Click changed objects in either image and add negative points to correct unwanted regions.
+- **Refine with control.** Inspect synchronized T1/T2 views, adjust the threshold, and edit masks with a brush, polygon, or eraser.
+- **Save and review.** Autosave dataset annotations, track review status, and export masks and prompt metadata.
+
+## Annotation workflow
+
+**Image pair → Point prompts + SAM 2 → Human revision → Save & export**
+
+<p align="center">
+  <a href="docs/assets/framework.png"><img src="docs/assets/framework.png" width="100%" alt="Point2Change workflow: paired images, positive clicks and SAM 2 processing, human mask revision, and saving soft masks, binary masks, and prompt JSON"></a>
+</p>
+
+Start with two registered images, click the changed objects, review the proposed
+regions, and refine them as needed. Save the annotation for continued editing
+or export soft masks, binary masks, and prompt metadata.
+
+## Examples
+
+### Case 1 · Localized changes
+
+A small set of positive point prompts guides mask proposals for changed objects
+in a parking-area scene. Both dates display the proposed regions for inspection.
+
+<p align="center">
+  <a href="docs/assets/case-01.png"><img src="docs/assets/case-01.png" width="100%" alt="Case 1: paired parking-area images with numbered red point prompts and green candidate change-mask overlays in the annotation interface"></a>
+</p>
+
+### Case 2 · Multiple building changes
+
+Point prompts guide candidate masks across a group of buildings between the two
+dates. The paired view supports checking each proposed footprint before review.
+
+<p align="center">
+  <a href="docs/assets/case-02.png"><img src="docs/assets/case-02.png" width="100%" alt="Case 2: paired images showing land development, with numbered red point prompts and green candidate mask overlays across multiple buildings"></a>
+</p>
+
+The examples show interactive annotation suggestions, not ground-truth masks
+or quantitative evaluation results. Click any figure to view the original image.
 
 ## Requirements
 
