@@ -5,13 +5,8 @@
 <h1 align="center">Point2Change</h1>
 
 <p align="center">
-  <strong>From point prompts to change masks.</strong><br>
-  SAM 2-assisted annotation for bi-temporal remote sensing imagery.<br>
-  Fewer manual outlines. More time for review.
-</p>
-
-<p align="center">
   <a href="#quick-start">Get started</a> ·
+  <a href="#operation-demo">Video</a> ·
   <a href="#annotation-workflow">Workflow</a> ·
   <a href="#examples">Examples</a>
 </p>
@@ -25,6 +20,12 @@ change response map so you can focus on reviewing and refining annotations.
 - **Prompt with points.** Click changed objects in either image and add negative points to correct unwanted regions.
 - **Refine with control.** Inspect synchronized T1/T2 views, adjust the threshold, and edit masks with a brush, polygon, or eraser.
 - **Save and review.** Autosave dataset annotations, track review status, and export masks and prompt metadata.
+
+## Operation demo
+
+[▶ Watch the operation demo](docs/assets/operation-demo.mp4)
+
+Watch a recording of Point2Change in use.
 
 ## Annotation workflow
 

@@ -4,6 +4,8 @@
 - `framework.png`: workflow figure supplied by the repository owner, copied without modification.
 - `case-01.png` and `case-02.png`: application screenshots supplied by the repository owner, copied without modification.
 
+- `operation-demo.mp4`: operation video supplied by the repository owner, copied without modification.
+
 The screenshots illustrate annotation suggestions, not benchmark results or
 ground-truth masks. No numerical performance claims are inferred from them.
 
