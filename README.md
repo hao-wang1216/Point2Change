@@ -23,7 +23,7 @@ change response map so you can focus on reviewing and refining annotations.
 
 ## Operation demo
 
-[▶ Watch the operation demo](docs/assets/operation-demo.mp4)
+https://github.com/user-attachments/assets/58ae25d7-f25b-4e96-986c-7b1db5728bc4
 
 Watch a recording of Point2Change in use.
 
