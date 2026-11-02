@@ -1,0 +1,2 @@
+# Compatibility alias; new installations should use requirements.txt.
+-r requirements.txt

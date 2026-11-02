@@ -1,0 +1,33 @@
+# Python and environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+# Model weights and tensor data (never commit)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.bin
+*.npy
+*.npz
+# Compiled extensions and build output
+*.pyd
+*.so
+*.dll
+*.exe
+build/
+dist/
+*.egg-info/
+# Local data and runtime output
+annotations/
+data/
+datasets/
+exports/
+*.log
+.idea/
+.vscode/
